@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Journal with Emotion Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🌙 Dream Journal + Emotion Tracker 💭</h2>
+    <label for="dream">🌌 Describe your dream:</label>
+    <textarea id="dream" placeholder="I was flying over the ocean..."></textarea>
+
+    <label>💡 How did it make you feel?</label>
+    <div class="emotions">
+      <label><input type="checkbox" value="Happy"> 😊 Happy</label>
+      <label><input type="checkbox" value="Sad"> 😢 Sad</label>
+      <label><input type="checkbox" value="Confused"> 😕 Confused</label>
+      <label><input type="checkbox" value="Scared"> 😨 Scared</label>
+      <label><input type="checkbox" value="Excited"> 😄 Excited</label>
+    </div>
+
+    <button onclick="saveEntry()">📝 Save Entry</button>
+
+    <div id="entries"></div>
+
+    <div class="chart">
+      <h3>📊 Emotional Insights</h3>
+      <canvas id="emotionChart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
